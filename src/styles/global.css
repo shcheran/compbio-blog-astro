@@ -1,0 +1,176 @@
+/* === Global Variables === */
+:root {
+  --accent: #2337ff;
+  --accent-dark: #000d8a;
+
+  --black: 15, 18, 25;
+  --gray: 96, 115, 159;
+  --gray-light: 229, 233, 240;
+  --gray-dark: 34, 41, 57;
+
+  --box-shadow:
+    0 2px 6px rgba(var(--gray), 0.25),
+    0 8px 24px rgba(var(--gray), 0.33),
+    0 16px 32px rgba(var(--gray), 0.33);
+}
+
+/* === Fonts === */
+@font-face {
+  font-family: "Atkinson";
+  src: url("/fonts/atkinson-regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson";
+  src: url("/fonts/atkinson-bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* === Base === */
+body {
+  font-family: "Atkinson", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(var(--gray-dark));
+  font-size: 18px;
+  line-height: 1.7;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--gray-light), 0.5),
+    #ffffff
+  );
+}
+
+/* === Layout === */
+main {
+  width: 720px;
+  max-width: calc(100% - 2rem);
+  margin: auto;
+  padding: 3rem 1rem;
+}
+
+/* === Typography === */
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(var(--black));
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+h1 { font-size: 2.6rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.6rem; }
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+/* === Links === */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Lists === */
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+
+/* === Blog Content (important) === */
+.prose {
+	width: 720px;
+	max-width: calc(100% - 2em);
+	margin: auto;
+	padding: 1em;
+	color: rgb(var(--gray-dark));
+}
+
+.prose p {
+  margin-bottom: 1.5rem;
+}
+
+.prose ul {
+  margin-bottom: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+/* === Code === */
+code {
+  padding: 2px 6px;
+  background: rgb(var(--gray-light));
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  padding: 1.2rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  background: rgb(var(--gray-light));
+}
+
+pre code {
+  all: unset;
+}
+
+/* === Blockquote === */
+blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* === Images === */
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* === Divider === */
+hr {
+  border: none;
+  border-top: 1px solid rgb(var(--gray-light));
+  margin: 2rem 0;
+}
+
+/* === Small Text === */
+small {
+  color: rgb(var(--gray));
+}
+
+/* === Responsive === */
+@media (max-width: 720px) {
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+}
+
+/* === Accessibility === */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

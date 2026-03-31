@@ -1,0 +1,154 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const latestPosts = posts.slice(0, 8);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section>
+				<p class="eyebrow">Bioinformatics research · tools · industry</p>
+				<h1>Bioinformatics Signals</h1>
+				<p class="intro">
+					An AI-assisted, manually curated signal feed covering bioinformatics research,
+					computational biology tools, and industry movement.
+				</p>
+				<p class="subtle">
+					Focused on signal over noise. Published as structured briefings, not personal essays.
+				</p>
+			</section>
+
+			<section>
+				<h2>Latest reports</h2>
+				{latestPosts.length > 0 ? (
+					<ul class="post-list">
+						{latestPosts.map((post) => (
+							<li class="post-item">
+
+								<a href={`/blog/${post.id}/`}>
+									<h3>{post.data.title}</h3>
+								</a>
+
+								<p class="meta">{post.data.pubDate.toLocaleDateString('en-US', {
+									year: 'numeric',
+									month: 'long',
+									day: 'numeric',
+								})}</p>
+								<p>{post.data.description}</p>
+							</li>
+						))}
+					</ul>
+				) : (
+					<p>No reports published yet.</p>
+				)}
+			</section>
+
+			<section>
+				<h2>What appears here</h2>
+				<ul>
+					<li>Research highlights from papers, preprints, and datasets</li>
+					<li>Industry updates across biotech, platforms, and funding</li>
+					<li>Tooling and workflow signals relevant to computational biology</li>
+					<li>Emerging patterns worth watching</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>About the feed</h2>
+				<p>
+					Content is assembled through automated aggregation, machine-assisted categorization,
+					and selective manual review.
+				</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		width: min(760px, calc(100% - 2rem));
+		margin: 0 auto;
+		padding: 3rem 0 4rem;
+		line-height: 1.7;
+	}
+
+	section + section {
+		margin-top: 3rem;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		line-height: 1.1;
+		margin: 0.25rem 0 1rem;
+	}
+
+	h2 {
+		font-size: 1.25rem;
+		margin-bottom: 1rem;
+	}
+
+	h3 {
+		font-size: 1.1rem;
+		margin: 0;
+	}
+
+	p {
+		margin: 0.75rem 0;
+	}
+
+	.eyebrow {
+		font-size: 0.9rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		opacity: 0.7;
+		margin-bottom: 0.5rem;
+	}
+
+	.intro {
+		font-size: 1.15rem;
+		max-width: 60ch;
+	}
+
+	.subtle,
+	.meta {
+		color: #666;
+		font-size: 0.95rem;
+	}
+
+	.post-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.post-item {
+		padding: 1.25rem 0;
+		border-bottom: 1px solid #e6e6e6;
+	}
+
+	.post-link {
+		text-decoration: none;
+	}
+
+	.post-link:hover h3 {
+		text-decoration: underline;
+	}
+
+	ul:not(.post-list) {
+		padding-left: 1.2rem;
+	}
+</style>
