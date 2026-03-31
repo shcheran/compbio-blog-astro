@@ -17,12 +17,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = FallbackImage } = Astro.props;
 
-const umamiSrc = import.meta.env.PUBLIC_UMAMI_SRC;
-const umamiWebsiteId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
-
-console.log("umamiSrc:", umamiSrc === undefined || umamiSrc === null);
-console.log("umamiWebsiteId:", umamiWebsiteId === undefined || umamiWebsiteId === null);
-
 ---
 
 <!-- Global Metadata -->
@@ -63,7 +57,3 @@ console.log("umamiWebsiteId:", umamiWebsiteId === undefined || umamiWebsiteId ==
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image.src, Astro.url)} />
-
-{import.meta.env.PROD && umamiSrc && umamiWebsiteId && (
-  <script async is:inline data-astro-rerun src={umamiSrc} data-website-id={umamiWebsiteId}></script>
-)}
