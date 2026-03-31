@@ -2,7 +2,7 @@
 
 AI-assisted, human-curated news feed across bioinformatics research, tools, and industry.
 
-Version deployed (here)[https://compbio-blog-astro.vercel.app/].
+Version deployed [here](https://compbio-blog-astro.vercel.app/).
 ---
 
 ## 🚀 Setup
