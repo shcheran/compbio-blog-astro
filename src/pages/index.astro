@@ -10,8 +10,8 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const latestPosts = posts.slice(0, 8);
 
-const umamiSrc = process.env.PUBLIC_UMAMI_SRC;
-const umamiWebsiteId = process.env.PUBLIC_UMAMI_WEBSITE_ID;
+const umamiSrc = import.meta.env.PUBLIC_UMAMI_SRC;
+const umamiWebsiteId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
 
 ---
 
