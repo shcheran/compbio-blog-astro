@@ -1,4 +1,4 @@
-# 🧬 Bioinformatics Signals
+# BioinStream - Compbio & Bioinformatics Blog
 
 AI-assisted, human-curated news feed across bioinformatics research, tools, and industry.
 
