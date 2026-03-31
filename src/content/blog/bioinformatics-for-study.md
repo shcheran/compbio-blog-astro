@@ -5,8 +5,6 @@ pubDate: '2026-03-30'
 heroImage: '../../assets/week-1-study.png'
 ---
 
-# Scientific Research & Bioinformatics Resources Digest
-
 This collection is a hands-on learning resource for students and researchers looking to build practical skills in bioinformatics, computational biology, and data analysis. It combines key research papers with tools, tutorials, and curated resources to help you both understand core concepts and apply them in real workflows.
 
 The focus is on **learning by doing** — exploring biological systems, working with real data, and using modern software to perform analyses. Whether you're starting out or advancing your skills, this set of articles provides a practical pathway to develop applied, job-relevant expertise.

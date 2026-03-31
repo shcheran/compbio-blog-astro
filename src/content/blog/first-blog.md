@@ -1,11 +1,9 @@
 ---
-title: "CompBio Digest Weekly — Week 1"
+title: "CompBio Digest — Week 1"
 description: "A curated digest of advances in autonomous scientific AI, multi-omics integration, genomic tooling, and interpretable computational biology."
 pubDate: '2026-03-30'
 heroImage: '../../assets/week-1.png'
 ---
-
-# AI & Bioinformatics Digest
 
 This week’s landscape highlights a powerful convergence: AI is no longer just assisting biological research — it is actively driving discovery, interpretation, and scale.
 
