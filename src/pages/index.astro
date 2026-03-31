@@ -10,27 +10,12 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const latestPosts = posts.slice(0, 8);
 
-const umamiSrc = import.meta.env.PUBLIC_UMAMI_SRC;
-const umamiWebsiteId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
-
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-
-		{
-			import.meta.env.PROD && umamiSrc && umamiWebsiteId && (
-				<script
-					is:inline
-					defer
-					src={umamiSrc}
-					data-website-id={umamiWebsiteId}
-				></script>
-			)
-		}
-		
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />		
 	</head>
 	<body>
 		<Header />
