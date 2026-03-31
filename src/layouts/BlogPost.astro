@@ -10,26 +10,11 @@ type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
-const umamiSrc = import.meta.env.PUBLIC_UMAMI_SRC;
-const umamiWebsiteId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
-
 ---
 
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
-
-		{
-			import.meta.env.PROD && umamiSrc && umamiWebsiteId && (
-				<script
-					is:inline
-					defer
-					src={umamiSrc}
-					data-website-id={umamiWebsiteId}
-				></script>
-			)
-		}
-		
 		<style>
 			main {
 				width: calc(100% - 2em);
