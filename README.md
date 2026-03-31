@@ -3,9 +3,8 @@
 AI-assisted, human-curated news feed across bioinformatics research, tools, and industry.
 
 Version deployed [here](https://compbio-blog-astro.vercel.app/).
----
 
-## 🚀 Setup
+## Setup
 
 Install dependencies and start the dev server:
 
@@ -19,9 +18,7 @@ npm run dev
 
 Open: http://localhost:4321
 
----
-
-## ✍️ Creating a Post
+## Creating a Post
 
 Create a new Markdown file in:
 
@@ -29,7 +26,7 @@ Create a new Markdown file in:
 src/content/blog/
 ```
 
-## ☁️ Deploy
+## Deploy
 
 Deploy via Vercel:
 
@@ -37,22 +34,19 @@ Deploy via Vercel:
 * Import project in Vercel
 * Auto-deploy on every push
 
----
 
-## 🔁 Workflow
+## Workflow
 
 1. Run data collection (RSS / scripts)
 2. Filter + curate news
 3. Create new `.md` file
 4. Commit & push
 
----
 
-## 🧠 Notes
+## Notes
 
 * No backend
 * No database
 * Content = Markdown files
 * Fully static site
 
----
