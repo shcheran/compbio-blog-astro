@@ -20,7 +20,7 @@ The focus is on **learning by doing** — exploring biological systems, working 
 **Source:** GitHub
 
 **Summary**  
-This curated list aggregates high-quality computer science courses with video lectures, covering a wide range of foundational and advanced topics. It provides structured and accessible learning pathways for students and professionals. The resource supports flexible, self-paced education in computational fields. ([link to the publication](https://github.com/Developer-Y/cs-video-courses))
+This curated list aggregates high-quality computer science courses, including Computational Biology, with video lectures, covering a wide range of foundational and advanced topics. It provides structured and accessible learning pathways for students and professionals. The resource supports flexible, self-paced education in computational fields. ([link to the publication](https://github.com/Developer-Y/cs-video-courses))
 
 **Keywords:** education, computer science, courses, video learning  
 
