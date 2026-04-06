@@ -11,7 +11,7 @@ The articles span clinical progress, drug development strategies, and cutting-ed
 
 ---
 
-## Cancer | Medicine | Business
+## Cancer, Medicine & Business
 
 ### Aardvark Pauses Second Trial Following Cardiac Safety Concerns
 
