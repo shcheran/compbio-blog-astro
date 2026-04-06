@@ -1,5 +1,5 @@
 ---
-title: "CompBio Digest — Week 1"
+title: "Week 1 - AI x Bioinformatics"
 description: "A curated digest of advances in autonomous scientific AI, multi-omics integration, genomic tooling, and interpretable computational biology."
 pubDate: '2026-03-30'
 heroImage: '../../assets/week-1.png'

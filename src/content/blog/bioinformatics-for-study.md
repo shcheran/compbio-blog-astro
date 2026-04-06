@@ -1,5 +1,5 @@
 ---
-title: "Molecular Biology, Neuroscience & Bioinformatics Resources"
+title: "Molecular Biology & Bioinformatics Resources for Studying"
 description: "A curated digest of recent studies and tools spanning DNA replication, neuroscience, cytoskeleton dynamics, and bioinformatics learning resources."
 pubDate: '2026-03-30'
 heroImage: '../../assets/week-1-study.png'
