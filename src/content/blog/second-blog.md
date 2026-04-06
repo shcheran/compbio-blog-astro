@@ -13,16 +13,6 @@ The articles span clinical progress, drug development strategies, and cutting-ed
 
 ## Cancer, Medicine & Business
 
-### Aardvark Pauses Second Trial Following Cardiac Safety Concerns
-
-**Source:** Fierce Biotech  
-
-**Abstract**  
-Aardvark halted a second phase 3 trial shortly after pausing an earlier study due to emerging cardiac safety signals. This decision highlights how safety endpoints can rapidly reshape clinical development timelines and pipeline strategies. It underscores the importance of continuous monitoring and risk assessment in late-stage trials, particularly for therapies targeting large patient populations. ([link to the publication](https://www.fiercebiotech.com/biotech/aardvark-halts-trials-obesity-candidate-putting-entire-pipeline-pause))
-
-**Keywords:** clinical trials, safety, cardiotoxicity, drug development  
-
----
 
 ### Apogee Therapeutics Eczema Drug
 
@@ -136,17 +126,6 @@ ROCKET integrates AlphaFold-style predictions with experimental data such as X-r
 
 ---
 
-### Protein Embedding Uncertainty
-
-**Source:** Nature Methods  
-
-**Abstract**  
-This work introduces a framework to quantify uncertainty in protein embeddings, improving reliability in downstream biological predictions. By identifying weak or ambiguous representations, it enhances model robustness and interpretability. This is critical for applications such as function prediction and variant analysis. ([link to the publication](https://www.nature.com/articles/s41592-026-03028-7))
-
-**Keywords:** embeddings, uncertainty, protein modeling  
-
----
-
 ### ClawBio — AI Agent Skills for Bioinformatics
 
 **Source:** GitHub  
@@ -221,6 +200,17 @@ OPTIMIS combines stochastic biological modeling with neural ODEs and reinforceme
 FoundedPBI uses genomic foundation models and ensemble learning to predict phage-bacterium interactions with high accuracy. By leveraging long-context genomic data, it improves prediction performance over existing methods. This approach accelerates development of phage therapy as an alternative to antibiotics. ([link to the publication](https://www.biorxiv.org/content/10.64898/2026.03.24.713871v1))
 
 **Keywords:** phage therapy, genomics, foundation models  
+
+---
+
+### Protein Embedding Uncertainty
+
+**Source:** Nature Methods  
+
+**Abstract**  
+This work introduces a framework to quantify uncertainty in protein embeddings, improving reliability in downstream biological predictions. By identifying weak or ambiguous representations, it enhances model robustness and interpretability. This is critical for applications such as function prediction and variant analysis. ([link to the publication](https://www.nature.com/articles/s41592-026-03028-7))
+
+**Keywords:** embeddings, uncertainty, protein modeling  
 
 ---
 
