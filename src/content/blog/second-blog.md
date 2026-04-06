@@ -1,5 +1,5 @@
 ---
-title: "CompBio Digest — Week 1"
+title: "CompBio Digest — Week 2"
 description: "A curated digest of breakthroughs across biotech, AI-driven biology, therapeutics, and computational methods shaping modern life sciences."
 pubDate: '2026-04-06'
 heroImage: '../../assets/week-2.png'
